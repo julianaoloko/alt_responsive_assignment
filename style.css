@@ -1,0 +1,36 @@
+body {
+  font-family: "Public Sans", 'Light Brown', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+input {
+  letter-spacing: 0.5px;
+}
+input::placeholder {
+  @apply text-gray-400;
+}
+
+input:focus,
+input:hover {
+  outline: none;
+  @apply border border-input-focus;
+}
+
+input.error {
+  outline: none;
+  @apply border border-input-error;
+}
+
+input.success {
+  outline: none;
+  @apply border border-input-valid;
+}
+
+input.disabled {
+  @apply cursor-not-allowed bg-input-disabled-bg;
+}
